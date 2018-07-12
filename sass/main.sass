@@ -1,0 +1,377 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.text-center
+	text-align: center
+
+.text-right
+	text-align: right
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.center-block
+	display: block
+	margin: 0 auto
+
+.color_element
+	color: $color
+.color_bg
+	background-color: $color
+.color_border
+	border-color: $color
+
+.bg_light
+	background-color: $bg_light
+.bg_dark
+	background-color: $main_color
+	color: #fff
+	.s_descr::after
+		background-color: #fff
+
+.hidden
+	display: none
+
+.button
+	display: inline-block
+	border: none
+	background-color: $btn
+	border: lighten(red, .5%) .5px solid
+	color: #fff
+	font-size: em(14px)
+	letter-spacing: 2px
+	text-transform: uppercase
+	padding: 13px 34px
+	border-radius: 3px 
+	box-shadow: 0 4px 0 lighten(red, .5%)
+	transition: all .5s ease
+	text-align: center
+	&:hover, &:focus
+		color: #fff
+		text-decoration: none
+	&:hover
+		background-color: lighten(red, 11%)
+	&:active
+		background-color: #0E9C4B
+.popup-form
+	padding: 16px 26px
+	border: lighten(red, .5%) .5px solid
+	background-color: rgba(7,7,7,.3)
+	.button
+		margin-top: 25px
+	&-head
+		text-align: center
+		h4
+			font-size: em(18px)
+			margin:
+				top: 0
+				bottom: 5px
+			color: #fff
+		p
+			color: #fff
+			opacity: .6
+			font-size: em(14px)
+			margin-top: 0  
+// .button-small
+// 	padding: 9px 28px
+// 	font-size: em(13px)
+// 	background-color: $accent
+// 	box-shadow: 0px 4px 0px darken($accent, 6%)
+// 	&:hover
+// 		background-color: lighten($accent, 8%)
+// 		box-shadow: 0px 4px 0px darken($accent, 3%)
+// 	&:active, &:focus
+// 		background-color: darken($accent, 6%)
+// 		box-shadow: 0px 4px 0px darken($accent, 6%)
+
+p,h1,h2,h3,h4,h5,h6
+	padding: 0
+	margin: 0
+	font-weight: normal
+
+
+
+header
+	background-image: url("../img/bg_2.jpg")
+	background-size: cover
+	background-position: top center
+	min-height: 100vh
+.bgc_head
+	background-color: rgba(2,2,2,.2)
+	min-height: 100vh
+	.top_line
+		background-color: rgba(7,7,7,.3)
+		color: #fff
+		font-family: "NautilusPompiliusRegular",sans-serif
+		padding-top: 15px
+		span
+			font-family: $default-font
+		.wrap_phone
+			h3
+				a
+					text-decoration: none
+					color: #FFF
+				span
+					color: lighten(red, .5%)
+					font-size: 15px 
+					font-family: $default-font  
+		.work_time
+			font-family: $default-font
+			font-size: 14px
+			span
+				color: lighten(red, .5%)
+	.midlle_head
+		h1
+			color: #fff
+			span
+				color: lighten(red, .5%)
+		p
+			color: #fff
+			text-transform: uppercase
+			font-size: 11px 
+		.desc_slider
+			h3
+				color: #FFF
+				padding-bottom: 10px
+				font-family: "NautilusPompiliusRegular",sans-serif  
+			span
+				color: lighten(red, .5%)  
+		.btn_gall
+			font-size: 50%
+			margin-top: 15px
+			font-size: 12px		 
+		.contact-form
+			padding: 16px 26px
+			border: lighten(red, .5%) .5px solid
+			background-color: rgba(7,7,7,.3)
+			margin-bottom: 40px
+			.button
+				margin-top: 25px
+			&-head
+				text-align: center
+				h4
+					font-size: em(18px)
+					margin:
+						top: 0
+						bottom: 5px
+					color: #fff
+				p
+					color: #fff
+					opacity: .6
+					font-size: em(14px)
+					margin-top: 0  
+form
+	label
+		margin-bottom: 14px
+		display: block
+		span
+			font-size: 14px
+			color: #fff
+			opacity: .9
+			display: block
+			margin-bottom: 3px
+		input, select, .selectize-input, .selectize-input.full
+			background-color: rgba(255,255,255,.7)
+			border-radius: 2px
+			border: none
+			padding: 9px 15px 7px
+			display: block
+			width: 100%
+			color: #222
+			font-size: em(15px)
+			border-bottom: transparent 4px solid
+			transition: all .5s ease
+			&:focus
+				background-color: #fff
+				border-bottom: lighten($accent_btn, .5%) 4px solid
+
+form#form
+	padding: 15px 35px 10px
+	background-color: rgba(255,255,255,.1)
+	max-width: 320px
+	margin: auto
+	position: relative
+	border: lighten(red, .5%) .5px solid
+	&:hover
+	input
+		width: 100%
+		padding: 4px
+		margin-bottom: 7px
+		margin-top: 5px
+	button
+		display: block
+		color: lighten(red, 1%)	
+	.btn_popup
+		button
+			border: none
+			margin: 5px auto
+			color: #fff
+			width: 50%
+			border: lighten(red, .5%) .1px solid
+			font-size: 14px
+			display: inline-block
+			background-color: $btn
+			letter-spacing: 2px
+			text-transform: uppercase
+			padding: 8px 10px
+			border-radius: 3px 
+			box-shadow: 0 4px 0 lighten(red, .5%)
+			transition: all .5s ease
+			text-align: center
+			&:hover, &:focus
+				color: #fff
+				text-decoration: none
+			&:hover
+				background-color: lighten(red, 11%)
+			&:active
+				background-color: #0E9C4B
+.popup-form
+	padding: 16px 26px
+	border: lighten(red, .5%) .5px solid
+	background-color: rgba(7,7,7,.3)
+	.button
+		margin-top: 25px
+	&-head
+		text-align: center
+		h4
+			font-size: em(18px)
+			margin:
+				top: 0
+				bottom: 5px
+			color: #fff
+		p
+			color: #fff
+			opacity: .9
+			font-size: em(14px)
+			margin-top: 0  
+
+.s_portfolio
+	// margin-top: 80px
+	.section_header
+		margin-top: 30px
+		h2
+			span
+				color: lighten(red, .5%)
+				font-family: "NautilusPompiliusRegular",sans-serif
+	.s_descr_wrap
+		text-align: center
+		.s_descr
+			display: inline-block
+			text-transform: uppercase
+			font-size: 12px
+			position: relative
+			margin-bottom: 60px
+			font-weight: 600
+			&::after
+				content: ""
+				height: 1px
+				left: 50%
+				margin-left: -75px
+				margin-top: 30px
+				position: absolute
+				width: 150px
+	.card
+		-webkit-transition: all .1s .02s ease  
+		-moz-transition: all .1s .02s ease  
+		-o-transition: all .1s .02s ease 
+		padding: 5px
+		border: 1px solid transparent
+		padding: 4px 4px 15px 4px
+		&:hover
+			border: lighten(red, .5%) .5px solid
+		img
+		h4
+			margin-top: 15px
+			margin-bottom: 13px
+		button.show_btn
+			border: none
+			color: #FFF
+			background-color: transparent
+			border: lighten(red, .5%) .1px solid
+			padding: 5px 12px
+			font-size: 11px
+			text-transform: uppercase
+			-webkit-transition: all .1s .02s ease  
+			-moz-transition: all .1s .02s ease  
+			-o-transition: all .1s .02s ease 
+			&:hover
+				// background-color: lighten(red, .5%)
+				color: lighten(red, .5%)    
+		button.deal_btn
+			border: none
+			color: #FFF
+			background-color: transparent
+			border: lighten(red, .5%) .1px solid
+			padding: 5px 8px
+			font-size: 11px
+			text-transform: uppercase
+			-webkit-transition: all .1s .02s ease  
+			-moz-transition: all .1s .02s ease  
+			-o-transition: all .1s .02s ease 
+			&:hover
+				background-color: transparent
+				// border: .5px solid #fff
+				color: lighten(red, .5%)
+#holmogor_11,#mira_86,#Magistr_95a,#izisk-48,#magis_115,#shevchenko_62
+	&:hover
+	button
+		display: block
+		color: lighten(red, 1%)
+	.slider_holmogor_11,.slider_mira_86,.slider_Magistr_95a,.slider_izisk_48,.slider_magist115,.slider_shevchenko_62
+		max-width: 500px
+		display: block
+		margin: 0 auto
+		position: relative
+			
+
+ 
+
+
+@import "media" // Всегда в конце
