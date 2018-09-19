@@ -288,9 +288,40 @@ form#form
 			color: #fff
 		p
 			color: #fff
-			opacity: .9
+			opacity: .6
 			font-size: em(14px)
 			margin-top: 0  
+
+.but_wrap
+	position: relative
+	img
+    width: 150px
+    opacity: .3
+	h3
+		font-family: "NautilusPompiliusRegular",sans-serif
+		font-size: 24px
+		a
+			text-decoration: none
+			color: #FFF
+			position: absolute
+			bottom: 50%
+			right: -50%
+			left: -50%
+			top: 67px
+			&::before
+				content: "\f095"
+				font-family: fontawesome
+				margin-right: 12px
+				font-size: 34px
+				opacity: .6
+				// color: lighten(red, .5%)
+		span
+			color: lighten(red, .5%)
+			font-size: 18px 
+			font-family: $default-font
+
+ 
+	
 
 .s_portfolio
 	// margin-top: 80px
@@ -364,11 +395,14 @@ form#form
 	button
 		display: block
 		color: lighten(red, 1%)
-	.slider_holmogor_11,.slider_mira_86,.slider_Magistr_95a,.slider_izisk_48,.slider_magist115,.slider_shevchenko_62
-		max-width: 500px
-		display: block
-		margin: 0 auto
-		position: relative
+.slider_holmogor_11,.slider_mira_86,.slider_Magistr_95a,.slider_izisk_48,.slider_magist115,.slider_shevchenko_62
+	max-width: 500px
+	display: block
+	margin: 0 auto
+	position: relative
+.wrapsl
+	width: 100%
+
 			
 
  
