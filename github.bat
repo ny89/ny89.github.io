@@ -1,3 +1,3 @@
 git add .
-git commit -m "Убрал на хуй все" 
+git commit -m "Get off fuck out everything" 
 git push -u origin master
