@@ -1,0 +1,138 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+h1
+	margin: 0
+	padding: 0
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+.text-right
+	text-align: right
+.text-center
+	text-align: center
+
+header
+	background-image: url(../img/bg_2.jpg)
+	min-height: 100vh
+	background-size: cover
+	.bg_head
+		background-color: rgba(.7,.7,.7,.2)
+		min-height: 100vh
+	.top_line_bg
+		// background-color: rgba(.7,.7,.7,.3)
+	.top_line
+		padding-top: 15px
+		color: #fff
+		.logo
+			.company
+				letter-spacing: 3px
+				font-family: "Pompi",  sans-serif	
+		.call
+			.descr_call
+				font-family: "Pompi", sans-serif
+			.phone
+				font-size: 18px
+				font-family: "Pompi", sans-serif
+				a
+					color: #fff
+					text-decoration: none
+					&:hover
+					text-decoration: none
+					outline: none
+				i
+					font-size: 20px
+					color: $accent
+
+
+					position: relative
+					top: 2.5px
+					right: 10px
+				span
+					color: $accent
+
+
+					font-size: 14px
+					font-family: "-o-light", sans-serif
+			.button_call
+			  a
+			    color: #fff
+			    font-size: 12px
+			    text-transform: uppercase
+			    text-decoration: none
+			    padding: 3px 20px
+			    border-bottom: 4px solid $accent
+			    display: inline-block 
+			    border-radius: 8px
+			    background-color: rgba(.7,.7,.7,.2)
+			  i
+			  	position: relative
+			  	right: 12px
+			  	color: $accent
+			  	font-size: 14px
+.h1
+	.offer
+		h1
+			font-size: 28px
+			color: #fff
+			font-weight: 100
+			margin-top: 60px
+
+
+
+
+
+
+
+
+
+
+
+@import "media" // Всегда в конце
