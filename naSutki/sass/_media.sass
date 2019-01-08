@@ -1,0 +1,93 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	header
+		background-position: bottom
+	.bg_head
+		background-color: rgba(.7,.7,.7,.4)
+	.h1
+		margin-top: 35px
+		padding: 0 20px
+		h1
+			font-size: 25px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	header
+		background-position: bottom
+	.bg_head
+		background-color: rgba(.7,.7,.7,.4)
+	.topline
+		&-left
+		.company
+			display: none
+		&-right
+		.klerk
+			display: none
+		.button
+			padding: 4px 16px
+	.h1
+		margin-top: 35px
+		padding: 0 20px
+		h1
+			font-size: 20px
+			
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.topline
+		&-left
+		.company
+			display: none
+		&-right
+		.klerk
+			display: none
+		.phone
+		  span
+		    font-size: 16px	
+		.button
+			padding: 4px 16px
+			a
+				font-size: 12px
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
