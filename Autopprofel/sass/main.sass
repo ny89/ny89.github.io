@@ -1,0 +1,282 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.text-center
+	text-align: center
+
+.text-right
+	text-align: right
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.hidden
+	display: none
+
+.button
+	display: inline-block
+	border: none
+	background-color: $btn
+	border: lighten(red, .5%) .5px solid
+	color: #fff
+	font-size: em(14px)
+	letter-spacing: 2px
+	text-transform: uppercase
+	padding: 13px 34px
+	border-radius: 3px 
+	box-shadow: 0 4px 0 lighten(red, .5%)
+	transition: all .5s ease
+	text-align: center
+	&:hover, &:focus
+		color: #fff
+		text-decoration: none
+	&:hover
+		background-color: lighten(red, 11%)
+	&:active
+		background-color: #0E9C4B
+
+// .button-small
+// 	padding: 9px 28px
+// 	font-size: em(13px)
+// 	background-color: $accent
+// 	box-shadow: 0px 4px 0px darken($accent, 6%)
+// 	&:hover
+// 		background-color: lighten($accent, 8%)
+// 		box-shadow: 0px 4px 0px darken($accent, 3%)
+// 	&:active, &:focus
+// 		background-color: darken($accent, 6%)
+// 		box-shadow: 0px 4px 0px darken($accent, 6%)
+
+p,h1,h2,h3,h4,h5,h6
+	padding: 0
+	margin: 0
+	font-weight: normal
+
+
+
+header
+	background-image: url("../img/bg_3.jpg")
+	background-size: cover
+	background-position: top center
+	min-height: 100vh
+.bgc_head
+	background-color: rgba(5,5,5,.2)
+	min-height: 100vh
+	.top_line
+		background-color: rgba(7,7,7,.3)
+		color: #fff
+		font-family: "NautilusPompiliusRegular",sans-serif
+		padding-top: 15px
+		span
+			font-family: $default-font
+		.wrap_phone
+			h3
+				a
+					text-decoration: none
+					color: #FFF
+				span
+					color: lighten(red, .5%)
+					font-size: 15px 
+					font-family: $default-font  
+		.work_time
+			font-family: $default-font
+			font-size: 14px
+			span
+				color: lighten(red, .5%)
+	.midlle_head
+		h1
+			color: #fff
+			font-size: 27px
+			margin-top: 50px
+			span
+				color: lighten(red, .5%) 
+		p
+			color: #fff
+			text-transform: uppercase
+			font-size: 11px
+			margin-top: 15px
+		.desc_slider
+			h3
+				color: #FFF
+				padding-bottom: 10px
+				font-family: "NautilusPompiliusRegular",sans-serif  
+			span
+				color: lighten(red, .5%)
+		.top
+			margin-top: 50px
+			i
+				font-size: 18px
+				color: #fff
+			.dest1,.dest2,.dest3,.dest4
+				color: #fff
+				// background-color: rgba(7,7,7,.3)
+				padding: 10px
+				span 
+					color: lighten(red, .5%) 
+					text-transform: uppercase
+		.btn_gall
+			font-size: 50%
+			margin-top: 15px
+			font-size: 12px		 
+		.contact-form
+			padding: 16px 26px
+			border: lighten(red, .5%) .5px solid
+			background-color: rgba(7,7,7,.3)
+			.button
+				margin-top: 25px
+			&-head
+				text-align: center
+				h4
+					font-size: em(18px)
+					margin:
+						top: 0
+						bottom: 5px
+					color: #fff
+				p
+					color: #fff
+					opacity: .6
+					font-size: em(14px)
+					margin-top: 0  
+form
+	label
+		margin-bottom: 14px
+		display: block
+		span
+			font-size: 14px
+			color: #fff
+			opacity: .9
+			display: block
+			margin-bottom: 3px
+		input, select, .selectize-input, .selectize-input.full
+			background-color: rgba(255,255,255,.7)
+			border-radius: 2px
+			border: none
+			padding: 9px 15px 7px
+			display: block
+			width: 100%
+			color: #222
+			font-size: em(15px)
+			border-bottom: transparent 4px solid
+			transition: all .5s ease
+			&:focus
+				background-color: #fff
+				border-bottom: lighten($accent_btn, .5%) 4px solid
+
+form#form
+	padding: 15px 35px 10px
+	background-color: rgba(255,255,255,.1)
+	max-width: 320px
+	margin: auto
+	position: relative
+	border: lighten(red, .5%) .5px solid
+	&:hover
+	input
+		width: 100%
+		padding: 7px
+		margin-bottom: 12px
+	button
+		display: block
+		color: lighten(red, 1%)				
+	.btn_popup
+		button
+			border: none
+			margin: auto
+			margin-top: 2px
+			margin-bottom: 6px
+			color: #fff
+			width: 50%
+			border: lighten(red, .5%) .1px solid
+			font-size: 14px
+			display: inline-block
+			background-color: $btn
+			letter-spacing: 2px
+			text-transform: uppercase
+			padding: 8px 10px
+			border-radius: 3px 
+			box-shadow: 0 4px 0 lighten(red, .5%)
+			transition: all .5s ease
+			text-align: center
+			&:hover, &:focus
+				color: #fff
+				text-decoration: none
+			&:hover
+				background-color: lighten(red, 11%)
+			&:active
+				background-color: #0E9C4B
+.popup-form
+	padding: 16px 26px
+	border: lighten(red, .5%) .5px solid
+	background-color: rgba(7,7,7,.3)
+	&:active
+		transition: all .5s ease
+	&-head
+		text-align: center
+		p
+			color: #fff
+			opacity: .9
+			font-size: em(14px)
+			margin-top: 0 
+			margin-bottom: 15px 
+
+section.porter
+	background-image: url("../img/bg_secrion2.jpg")
+	background-size: cover
+	background-position: top center
+	// min-height: 100vh
+	margin-top: 10px
+	.bgc_porter
+		background-color: rgba(5,5,5,.2)
+
+	
+
+
+
+
+@import "media" // Всегда в конце
