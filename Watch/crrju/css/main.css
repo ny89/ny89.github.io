@@ -969,10 +969,10 @@ hr {
 header {
   background-image: url(../img/bg.jpg);
   background-size: cover;
-  min-height: 700px; }
+  min-height: 100vh; }
   header .bg_head {
     background-color: rgba(0, 0, 0, 0.3);
-    min-height: 700px; }
+    min-height: 100vh; }
   header .top {
     margin-top: 12%; }
     header .top .left img {
@@ -1006,6 +1006,7 @@ header {
     margin-top: 40px; }
     header .button a {
       background: -moz-radial-gradient(left, #d36324, #000);
+      background: -webkit-radial-gradient(left, #d36324, #000);
       font-size: 12px;
       text-transform: uppercase;
       color: #888;
@@ -1015,7 +1016,8 @@ header {
       border-radius: 17px; }
       header .button a:hover {
         text-decoration: none;
-        background: -moz-linear-gradient(left, #000, #d36324); }
+        background: -moz-linear-gradient(left, #000, #d36324);
+        background: -webkit-linear-gradient(left, #000, #d36324); }
 
 .popup {
   width: 100%;
